@@ -23,7 +23,7 @@
     import { io } from 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.esm.min.js'
 
     const username = localStorage.getItem('username')
-    const socket = io('https://corsproxy.io/?https://chat-app-ten-nu-92.vercel.app/chat', {
+    const socket = io('http://localhost:3003/chat', {
         auth: { username }
     })
     const form = document.querySelector('#form')
